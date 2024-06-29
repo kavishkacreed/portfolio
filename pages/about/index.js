@@ -18,6 +18,7 @@ import {
 } from 'react-icons/si';
 
 //  about data
+/* eslint-disable no-use-before-define */
 export const aboutData = [
   {
     title: 'skills',
@@ -25,18 +26,18 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key={1} />,
+          <FaCss3  key={1}/>,
+          <FaJs  key={1}/>,
+          <FaReact  key={1}/>,
+          <SiNextdotjs  key={1}/>,
+          <SiFramer  key={1}/>,
+          <FaWordpress  key={1}/>,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma  key={1}/>, <SiAdobexd  key={1}/>, <SiAdobephotoshop  key={1}/>],
       },
     ],
   },
@@ -136,7 +137,7 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
+            10 years ago, I began freelancing as a developer. Since then, I&apos;ve
             done remote work for agencies, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
@@ -226,7 +227,7 @@ const About = () => {
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>;
+                      return <div key={itemIndex} className='text-2xl text-white'>{icon}</div>;
                     })}
                   </div>
                 </div>
