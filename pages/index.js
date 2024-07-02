@@ -37,7 +37,7 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
-            Freelance computer wizard ready to tackle any digital challenge!
+            Freelance computer wizard ready to tackle any digital challenge! From coding to design 
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
