@@ -9,6 +9,7 @@ import {
   RiDribbbleLine,
   RiBehanceLine,
   RiPinterestLine,
+  RiTwitterLine,
 } from 'react-icons/ri';
 
 const Socials = () => {
@@ -17,12 +18,16 @@ const Socials = () => {
       <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiYoutubeLine />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
+      <Link href={'https://fb.com/kavishkacreed'} className='hover:text-accent transition-all duration-300'>
         <RiFacebookLine />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
+      <Link href={'https://instagram.com/kavishkacreed'} className='hover:text-accent transition-all duration-300'>
         <RiInstagramLine />
       </Link>
+      <Link href={'https://twitter.com/kavishkacreed'} className='hover:text-accent transition-all duration-300'>
+        <RiTwitterLine />
+      </Link>
+      
       <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiDribbbleLine />
       </Link>

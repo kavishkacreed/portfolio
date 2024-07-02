@@ -8,6 +8,9 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaPhp,
+  FaNode,
+  FaVideo,
 } from 'react-icons/fa';
 
 import {
@@ -15,6 +18,10 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobeaftereffects,
+  SiAdobepremierepro,
+  
 } from 'react-icons/si';
 
 //  about data
@@ -33,12 +40,23 @@ export const aboutData = [
           <SiNextdotjs  key={5}/>,
           <SiFramer  key={6}/>,
           <FaWordpress  key={7}/>,
+          <FaPhp  key={7}/>,
+          <FaNode  key={8}/>,
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma  key={1}/>, <SiAdobexd  key={2}/>, <SiAdobephotoshop  key={3}/>, <SiAdobephotoshop  key={4}/>],
+        title: 'Graphic Design',
+        icons: [<SiAdobephotoshop  key={1}/>, <SiAdobeillustrator  key={2}/>,],
       },
+      {
+        title: 'UI/UX Design',
+        icons: [<FaFigma  key={1}/>, <SiAdobexd  key={2}/>, <SiAdobephotoshop  key={3}/>,],
+      },
+      {
+        title: 'Video Editing',
+        icons: [<SiAdobeaftereffects  key={1}/>,<SiAdobepremierepro  key={2}/>,],
+      },
+      
     ],
   },
   {
@@ -46,11 +64,11 @@ export const aboutData = [
     info: [
       {
         title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        stage: '2019 - 2020',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Adobe Design Achievement Awards - Quater Finalist',
+        stage: '2018',
       },
     ],
   },
@@ -58,40 +76,42 @@ export const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'UX/UI Designer',
+        stage: '2023 - 2024',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Web Developer',
+        stage: '2016 - 2024',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Video Editor',
+        stage: '2016 - 2024',
       },
+      
     ],
   },
   {
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Bachelor of Information Technology - University of Colombo, Sri Lanka',
+        stage: '',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Certified Web Engineer - Pearson',
+        stage: '2018',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Certified Software Developer - Pearson',
+        stage: '2018',
       },
+      
     ],
   },
 ];
 
 // components
-import Avatar from '../../components/Avatar';
+import Avatar from '../../components/Avatar2';
 import Circles from '../../components/Circles';
 
 // framer motion
@@ -137,7 +157,7 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I&apos;ve
+            8 years ago, I began freelancing as a designer/developer. Since then, I&apos;ve
             done remote work for agencies, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
@@ -153,7 +173,7 @@ const About = () => {
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={8} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Years of experience
@@ -162,7 +182,7 @@ const About = () => {
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={200} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Satisfied clients
@@ -171,7 +191,7 @@ const About = () => {
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={250} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Finished projects
