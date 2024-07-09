@@ -31,7 +31,7 @@ const Services = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Consider me your friendly neighborhood IT wizard!  Whether you need a website built from scratch or your computer rescued from the digital abyss, I&aposm here to solve your tech troubles. Here&aposs how I can help:
+              Consider me your friendly neighborhood IT wizard!  Whether you need a website built from scratch or your computer rescued from the digital abyss, I am here to solve your tech troubles. Here&apos; s how I can help:
             </motion.p>
           </div>
 
