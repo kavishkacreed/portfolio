@@ -59,19 +59,19 @@ export const aboutData = [
       
     ],
   },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2019 - 2020',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Quater Finalist',
-        stage: '2018',
-      },
-    ],
-  },
+  // {
+  //   title: 'awards',
+  //   info: [
+  //     {
+  //       title: 'Webby Awards - Honoree',
+  //       stage: '2019 - 2020',
+  //     },
+  //     {
+  //       title: 'Adobe Design Achievement Awards - Quater Finalist',
+  //       stage: '2018',
+  //     },
+  //   ],
+  // },
   {
     title: 'experience',
     info: [
@@ -200,10 +200,10 @@ const About = () => {
               {/* awards */}
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={999} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Winning awards
+                  Coffees
                 </div>
               </div>
             </div>
