@@ -29,7 +29,7 @@ export const serviceData = [
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'I craft beautiful and intuitive user interfaces that prioritize user experience. ',
+    description: 'I craft beautiful and intuitive user interfaces that prioritize user experience with eye catching visuals. ',
   },
   
   {
